@@ -72,7 +72,7 @@ export function isTrueRegex(
       const matchedSubstrings2 =
         testString.match(new RegExp(pattern2, "g")) || [];
       matchedSubstrings = [
-        ...new Set([...matchedSubstrings1, ...matchedSubstrings2]),
+        new Set([...matchedSubstrings1, ...matchedSubstrings2]),
       ].join("");
     }
     console.log("====================================");

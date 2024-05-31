@@ -23,9 +23,9 @@ export const SqlInjectio = () => {
         />
 
         <div className="text-white mt-4">
-          <p className="text-gray-400">Examples:</p>
+          {/* <p className="text-gray-400">Examples:</p>
           <p className="text-red-400">'; DROP TABLE users; --</p>
-          <p className="text-red-400">' OR '1'='1</p>
+          <p className="text-red-400">' OR '1'='1</p> */}
         </div>
         <div className="mt-6">
           {isHasSqlInjection ? (

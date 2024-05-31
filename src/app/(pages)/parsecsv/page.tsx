@@ -8,7 +8,7 @@ export default function ParseCsv() {
   const handleSumbit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Prevent form submission from refreshing the page
     const formData = new FormData(event.currentTarget);
-    const data = await pasingCsv(formData);
+    const data:any = await pasingCsv(formData);
     setResult(data);
   };
 
@@ -50,14 +50,14 @@ export default function ParseCsv() {
               {result.length > 0 && (
                 <div className="bg-white p-4 rounded-md">
                   <h3 className="text-lg font-bold mb-4">Parsed CSV Data</h3>
-                  {result.map((entry, index) => (
+                  {result.map((entry: any[], index) => (
                     <div
                       key={index}
                       className="mb-4 p-2 border-2 border-gray-300 rounded-md"
                     >
-                      {entry.map((item, subIndex) => (
+                      {entry.map((item: any, subIndex) => (
                         <div key={subIndex} className="mb-2">
-                          {Object.entries(item).map(([key, value]) => (
+                          {Object.entries(item).map(([key, value]: [string, any]) => (
                             <p key={key} className="text-sm">
                               <strong>{key}:</strong> {value}
                             </p>
