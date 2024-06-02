@@ -10,7 +10,7 @@ export const learnReqex = [
   },
   {
     title: "steps.whatIsRegex.title",
-    description: "steps.whatIsRegex.description",
+    description: "write the regex that will match document.pdf manual.pdf",
     originalTitle: "Regular Expressions",
     content: "readme.md\ndocument.pdf\nimage.png\nmusic.mp4\nmanual.pdf",
     initialFlags: "gm",
